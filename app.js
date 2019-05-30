@@ -37,7 +37,7 @@ app.use(
   })
 );
 
-mongoose.connect("mongodb://localhost/pendoTestDB");
+mongoose.connect("mongodb+srv://ehamadani:pendo123!!a@cluster0-ra9mx.mongodb.net/test?retryWrites=true&w=majority");
 mongoose.Promise = global.Promise;
 
 var UserSchema = new mongoose.Schema(

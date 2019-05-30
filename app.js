@@ -143,6 +143,9 @@ app.get("/logout", function(req, res) {
   res.redirect("/");
 });
 
-app.listen(7000, function() {
-  console.log("listening on port 7000");
+// Port Number
+const port = process.env.PORT || 4000
+
+app.listen(port, function() {
+  console.log("listening on port", port);
 });
